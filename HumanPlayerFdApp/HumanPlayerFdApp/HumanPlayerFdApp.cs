@@ -310,8 +310,6 @@ namespace EncounterSimulator
         }
         #endregion //Declaration Management Callbacks
 
-
-
         #region Object Management Callbacks
         // FdAmb_ObjectDiscoveredHandler
         public override void FdAmb_ObjectDiscoveredHandler(object sender, HlaObjectEventArgs data)
@@ -416,7 +414,7 @@ namespace EncounterSimulator
                     Console.ForegroundColor = ConsoleColor.Blue;
 
                 Console.WriteLine("##################\n" +
-                    "Interaction received:\n sender: " + senderID 
+                    "Interaction received:\nsender: " + senderID 
                     + "\nmessage: " + msg 
                     + "\ntimestamp: " + theTimeStamp 
                     + "\nStatus Message: " + statusMessage 
@@ -427,11 +425,15 @@ namespace EncounterSimulator
                     if (!statusMessage)
                     {
                         string[] attackDetails = msg.Split(',');
-
-                        Program.humanPlayer.healthPoints = (Int32.Parse(Program.humanPlayer.healthPoints) - Int32.Parse(attackDetails[1])).ToString();
-                        updateValues();
-                        Console.WriteLine("\n>>>> New human player HP: " + Program.humanPlayer.healthPoints);
-                        checkPlayerStatus();
+                        int len = attackDetails.Length;
+                        //Helps avoid an exception that occurs at the end of the program
+                        if (len >= 2)
+                        {
+                            Program.humanPlayer.healthPoints = (Int32.Parse(Program.humanPlayer.healthPoints) - Int32.Parse(attackDetails[1])).ToString();
+                            updateValues();
+                            Console.WriteLine("\n>>>> New human player HP: " + Program.humanPlayer.healthPoints);
+                            checkPlayerStatus();
+                        }
                     }
                 }
                 else if (senderID == "encounter1")
@@ -449,133 +451,6 @@ namespace EncounterSimulator
         }
         #endregion //Object Management Callbacks
 
-
-        #region Ownership Management Callbacks
-            // FdAmb_AttributeOwnershipAssumptionRequested
-        public override void FdAmb_AttributeOwnershipAssumptionRequested(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipAssumptionRequested(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipAssumptionRequested");
-            #endregion //User Code
-        }
-        // FdAmb_AttributeOwnershipAcquisitionCancellationConfirmed
-        public override void FdAmb_AttributeOwnershipAcquisitionCancellationConfirmed(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipAcquisitionCancellationConfirmed(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipAcquisitionCancellationConfirmed");
-            #endregion //User Code
-        }
-        // FdAmb_AttributeOwnershipUnavailable
-        public override void FdAmb_AttributeOwnershipUnavailable(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipUnavailable(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipUnavailable");
-            #endregion //User Code
-        }
-        // FdAmb_AttributeOwnershipDivestitureNotified
-        public override void FdAmb_AttributeOwnershipDivestitureNotified(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipDivestitureNotified(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipDivestitureNotified");
-            #endregion //User Code
-        }
-        // FdAmb_AttributeOwnershipAcquisitionNotified
-        public override void FdAmb_AttributeOwnershipAcquisitionNotified(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipAcquisitionNotified(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipAcquisitionNotified");
-            #endregion //User Code
-        }
-        // FdAmb_AttributeOwnershipInformed
-        public override void FdAmb_AttributeOwnershipInformed(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipInformed(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipInformed");
-            #endregion //User Code
-        }
-        // FdAmb_AttributeOwnershipReleaseRequestedHandler
-        public override void FdAmb_AttributeOwnershipReleaseRequestedHandler(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_AttributeOwnershipReleaseRequestedHandler(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_AttributeOwnershipReleaseRequestedHandler");
-            #endregion //User Code
-        }
-        // FdAmb_RequestDivestitureConfirmation
-        public override void FdAmb_RequestDivestitureConfirmation(object sender, HlaOwnershipManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_RequestDivestitureConfirmation(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_RequestDivestitureConfirmation");
-            #endregion //User Code
-        }
-        #endregion //Ownership Management Callbacks
-
-
-        #region Time Management Callbacks
-        // FdAmb_TimeRegulationEnabled
-        public override void FdAmb_TimeRegulationEnabled(object sender, HlaTimeManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_TimeRegulationEnabled(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_TimeRegulationEnabled");
-            #endregion //User Code
-        }
-        // FdAmb_TimeConstrainedEnabled
-        public override void FdAmb_TimeConstrainedEnabled(object sender, HlaTimeManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_TimeConstrainedEnabled(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_TimeConstrainedEnabled");
-            #endregion //User Code
-        }
-        // FdAmb_TimeAdvanceGrant
-        public override void FdAmb_TimeAdvanceGrant(object sender, HlaTimeManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_TimeAdvanceGrant(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_TimeAdvanceGrant");
-            #endregion //User Code
-        }
-        // FdAmb_RequestRetraction
-        public override void FdAmb_RequestRetraction(object sender, HlaTimeManagementEventArgs data)
-        {
-            // Call the base class handler
-            base.FdAmb_RequestRetraction(sender, data);
-
-            #region User Code
-            throw new NotImplementedException("FdAmb_RequestRetraction");
-            #endregion //User Code
-        }
-        #endregion //Time Management Callbacks
         #endregion //Federate Callback Event Handlers
         #endregion //Event Handlers
 
