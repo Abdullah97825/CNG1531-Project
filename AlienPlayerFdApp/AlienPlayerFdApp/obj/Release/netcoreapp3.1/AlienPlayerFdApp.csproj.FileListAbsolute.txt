@@ -1,0 +1,16 @@
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\AlienPlayerFdApp.exe
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\AlienPlayerFdApp.deps.json
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\AlienPlayerFdApp.runtimeconfig.json
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\AlienPlayerFdApp.runtimeconfig.dev.json
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\AlienPlayerFdApp.dll
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\AlienPlayerFdApp.pdb
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\Racon.RtiLayer.Native.dll
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\Racon.RtiLayer.dll
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\bin\Release\netcoreapp3.1\Racon.dll
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.AssemblyInfoInputs.cache
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.AssemblyInfo.cs
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.csproj.CoreCompileInputs.cache
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.dll
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.pdb
+C:\Abood\Metu NCC\Masters\2nd-Semester\CNG1531\Project\EncounterSimulation\AlienPlayerFdApp\AlienPlayerFdApp\obj\Release\netcoreapp3.1\AlienPlayerFdApp.genruntimeconfig.cache

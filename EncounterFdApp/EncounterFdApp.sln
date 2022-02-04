@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncounterFdApp", "EncounterFdApp\EncounterFdApp.csproj", "{9167BBB9-B6B7-473E-8203-09BB4355202C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9167BBB9-B6B7-473E-8203-09BB4355202C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9167BBB9-B6B7-473E-8203-09BB4355202C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9167BBB9-B6B7-473E-8203-09BB4355202C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9167BBB9-B6B7-473E-8203-09BB4355202C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8088FE86-2E19-458C-B4D4-B3A9355FBAEC}
+	EndGlobalSection
+EndGlobal
